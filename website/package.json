@@ -1,0 +1,20 @@
+{
+  "name": "website",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file=../.env src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.15.0",
+    "@passninja/passninja-js": "^0.6.0",
+    "hono": "^4.8.3",
+    "stripe": "^18.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3"
+  }
+}

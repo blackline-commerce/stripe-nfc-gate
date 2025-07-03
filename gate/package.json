@@ -1,0 +1,23 @@
+{
+  "name": "gate",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --env-file=../.env src/index.ts",
+    "build": "tsc",
+    "start": "node --env-file=../.env src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@serialport/parser-readline": "^13.0.0",
+    "@types/node": "^20.11.17",
+    "serialport": "^13.0.0",
+    "stripe": "^18.3.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3"
+  }
+}
