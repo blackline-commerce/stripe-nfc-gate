@@ -34,6 +34,10 @@ For example, for a gym membership:
 - [VTAP100 NFC Reader](https://shop.vtapnfc.com/product/vtap100-embedded-nfc-reader-board)
 - [Raspberry PI Zero 2W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/)
 
+## Resources
+
+- [VTAP Settings and Commands Reference](https://www.vtapnfc.com/downloads/VTAP_Commands_Reference_Guide.pdf)
+
 ## License
 
 MIT
