@@ -8,16 +8,18 @@ This example is suitable for Gyms, Co-working spaces, Parking garages, and Hotel
 ## Background
 
 To access a paid location, we are often issues keys, NFC cards and keyfobs, but there is a better way - Apple & Google Wallet passes.
+
 With Apple and Google Passes we can use our phone or watch to open the door.
+
 The NFC reader can check the status of payment, for example, in a gym the payment is a Stripe Subscription. The door can then be opened dependending on the status of their subscription.
 
 ## How it works
 
 For example, for a gym membership:
 
-1. Customer pays for a membership using Stripe Checkout.
-2. Customer receives a digital pass via Apple Wallet or Google Wallet.
-3. Customer can now open gym's door by placing their Phone or Watch near the door's NFC reader.
+1. Customer pays for a membership using **Stripe Checkout**.
+2. Customer receives a digital pass via **Apple Wallet** or **Google Wallet**.
+3. Customer **can access the gym** by placing their phone or watch near the gym door's NFC reader.
 
 ## Benefits
 
