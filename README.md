@@ -7,7 +7,9 @@ This example is suitable for Gyms, Co-working spaces, Parking garages, and Hotel
 
 ## Background
 
-To access a paid location, we are often issues keys, NFC cards and keyfobs, but there is a better way - Apple & Google Wallet passes.
+To access a paid services, we are often issued door keys, and NFC card or a keyfob. These can be annoying to carry, and they're painful to replace when they get lost.
+
+Luckily, there's a better way - using Apple & Google Wallet passes.
 
 With Apple and Google Passes we can use our phone or watch to open the door.
 
