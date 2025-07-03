@@ -14,19 +14,13 @@ const {
   PASSNINJA_API_KEY,
   PASSNINJA_PASS_TYPE,
 } = process.env
-const stripe = new Stripe(STRIPE_SECRET_KEY)
+const stripe = new Stripe(STRIPE_SECRET_KEY as string)
 const success_url = new URL('/success?session_id={CHECKOUT_SESSION_ID}', SITE_URL).toString()
-const passNinja = new PassNinjaClient(PASSNINJA_ACCOUNT_ID, PASSNINJA_API_KEY)
+const passNinja = new PassNinjaClient(PASSNINJA_ACCOUNT_ID as string, PASSNINJA_API_KEY as string)
 
 const app = new Hono()
-  .use('/', serveStatic({
-    root: './static',
-    getContent: async path => {
-      return fs.readFile(path, "utf-8")
-    }
-  }))
 
-app.post('/signup', async (c) => {
+app.post('/subscribe', async (c) => {
   const session = await stripe.checkout.sessions.create({
     mode: 'subscription',
     success_url,
@@ -63,6 +57,14 @@ app.get('/success', async (c) => {
 
   return c.redirect(pass.url)
 })
+
+app.use('/*', serveStatic({
+  root: './static',
+  getContent: async path => {
+    console.log({ path })
+    return fs.readFile(path)
+  }
+}))
 
 serve({
   fetch: app.fetch,

@@ -1,3 +1,40 @@
-<form action="/signup" method="post">
-  <button>Signup</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super Gym</title>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      font-family: Inter, sans-serif;
+      font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    }
+    @supports (font-variation-settings: normal) {
+      :root { font-family: InterVariable, sans-serif; }
+    }
+  </style>
+</head>
+<body style="background-image: url(/images/bg.png)" class="bg-white text-gray-900 bg-cover flex flex-col">
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center self-center justify-center rounded-md gap-10 p-20 my-40 w-120 bg-white">
+    <h1 class="text-5xl font-bold mb-6 text-center">Join SuperGym Today</h1>
+    <a href="#pricing" class="bg-blue-200 px-6 py-3 rounded-full font-semibold hover:bg-gray-100">Get Jacked</a>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 flex flex-col items-center bg-gray-100">
+    <h2 class="text-4xl font-bold mb-8">Pricing</h2>
+    <div class="flex flex-col gap-4 bg-white shadow-lg rounded-lg p-8 text-center w-80">
+      <h3 class="text-2xl font-semibold mb-4 text-gray-500">Monthly Membership</h3>
+      <p class="text-3xl font-bold mb-4">$39<span class="text-xl">/month</span></p>
+
+      <form action="/subscribe" method="post">
+        <button class="px-6 py-3 rounded-full font-semibold bg-blue-200 hover:bg-blue-700 hover:text-white">Subscribe</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
