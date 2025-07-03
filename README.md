@@ -7,7 +7,7 @@ This example is suitable for gyms, co-working spaces, parking garages, and hotel
 
 ## Background
 
-It's common to access paid services, like gyms or co-working spaces using keys, NFC cards or a keyfob. These can be annoying to carry, and they're painful to replace when they get lost.
+It's common to access paid services, like gyms or co-working spaces, using keys, NFC cards or a keyfob. These can be annoying to carry, and they're painful to replace when they get lost.
 
 Luckily, there's a better way - using Apple & Google Wallet passes.
 
@@ -21,7 +21,7 @@ For example, for a gym membership:
 
 1. Customer pays for a membership using **Stripe Checkout**.
 2. Customer receives a digital pass via **Apple Wallet** or **Google Wallet**.
-3. Customer **can access the gym** by placing their phone or watch near the gym door's NFC reader.
+3. Customer **can now access the gym** by placing their phone or watch near the gym door's NFC reader.
 
 ## Benefits
 
