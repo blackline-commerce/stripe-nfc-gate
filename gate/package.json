@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx --env-file=../.env src/index.ts",
+    "check": "tsc --noEmit",
     "build": "tsc",
     "start": "node --env-file=../.env src/index.ts"
   },
