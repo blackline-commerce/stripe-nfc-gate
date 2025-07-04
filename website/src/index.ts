@@ -82,10 +82,7 @@ app.get('/success', async (c) => {
 // handle static files like /index.html
 app.use('/*', serveStatic({
   root: './static',
-  getContent: async path => {
-    console.log({ path })
-    return fs.readFile(path)
-  }
+  getContent: fs.readFile
 }))
 
 // run the server on port 3000
