@@ -3,11 +3,12 @@ Stripe NFC Gate
 
 A solution for accessing physical doors based on Stripe Subscriptions and NFC Passes.
 
-This example is suitable for gyms, co-working spaces, parking garages, and hotels.
+This example is suitable for gyms, co-working spaces, parking garages, hotels and event tickets.
 
 ## Background
 
 It's common to access paid services, like gyms or co-working spaces, using keys, NFC cards or a keyfob. These can be annoying to carry, and they're painful to replace when they get lost.
+They also require a human to issue them the first time.
 
 Luckily, there's a better way - using Apple & Google Wallet passes.
 
