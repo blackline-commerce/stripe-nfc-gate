@@ -1,6 +1,10 @@
 import Stripe from 'stripe'
 import { SerialPort } from 'serialport'
 import { ReadlineParser } from '@serialport/parser-readline'
+import { Gpio } from './gpio.js'
+
+// setup a connection to the relay on GPIO8
+const relay = new Gpio(+process.env.RELAY_PIN!)
 
 // create the Stripe API client
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string)
@@ -17,6 +21,10 @@ async function find_nfc_reader(): Promise<string | undefined> {
 
 // function to flash LEDs green, and play a beep
 function success(port: SerialPort) {
+  // trigger the relay for 5 seconds
+  relay.high()
+  setTimeout(() => relay.low(), 5_000)
+
   port.write('?LEDR 00FF00,100,100,4\n')
   port.write('?BEEPR 100,100,2\n')
 }
