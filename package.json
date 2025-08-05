@@ -1,0 +1,17 @@
+{
+  "name": "stripe-nfc-gate",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check": "pnpm -r run check",
+    "build": "pnpm -r run build",
+    "start:gate": "pnpm --filter gate run dev",
+    "start:web": "pnpm --filter website run dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@10.13.1"
+}
