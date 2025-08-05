@@ -56,7 +56,7 @@ reader.on('data', async (subscription_id) => {
 
   // check if subscription is active
   if (subscription?.status === 'active') {
-    // flash LEDs green and play sound
+    // open lock, flash LEDs green, and play sound
     success(port)
     console.log(`Access allowed. id=${ subscription_id }!`)
   } else {
