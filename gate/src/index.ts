@@ -56,13 +56,12 @@ parser.on('data', async (subscription_id) => {
 
   // get the subscription and customer records
   const subscription = await stripe.subscriptions.retrieve(subscription_id)
-  const customer = await stripe.customers.retrieve(subscription.customer as string)
 
   // check if subscription is active
-  if (subscription.status === 'active' && !customer.deleted) {
+  if (subscription?.status === 'active') {
     // flash LEDs green and play sound
     success(port)
-    console.log(`Welcome ${ customer.name }!`)
+    console.log(`Access allowed. id=${ subscription_id }!`)
   } else {
     // flash LEDs red and play sound
     error(port)
