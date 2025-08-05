@@ -1,6 +1,7 @@
 import { spawn } from 'child_process'
 
 // wrapper around `pinctrl` CLI
+// https://github.com/raspberrypi/utils/tree/master/pinctrl
 //
 // see `pinctrl -h` for docs
 //
