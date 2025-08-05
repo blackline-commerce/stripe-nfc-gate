@@ -44,15 +44,12 @@ if (!path) throw new Error('No NFC reader found! Please make sure NFC reader is 
 // create serial port client
 const port = new SerialPort({ path, baudRate: 9600 })
 // use Readline so that we get full lines
-const parser = port.pipe(new ReadlineParser({ delimiter: '\r\n' }))
+const reader = port.pipe(new ReadlineParser({ delimiter: '\r\n' }))
 
 // handle new data from serial port
-parser.on('data', async (subscription_id) => {
+reader.on('data', async (subscription_id) => {
   // ignore useless messages
   if (subscription_id == 'OK') return
-
-  // otherwise, the data is the Stripe subscription id
-  console.log(subscription_id)
 
   // get the subscription and customer records
   const subscription = await stripe.subscriptions.retrieve(subscription_id)
@@ -65,6 +62,6 @@ parser.on('data', async (subscription_id) => {
   } else {
     // flash LEDs red and play sound
     error(port)
-    console.log(`Access denied. status=${subscription?.status}`)
+    console.error(`Access denied. status=${subscription?.status}`)
   }
 })
