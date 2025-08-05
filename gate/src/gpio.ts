@@ -30,6 +30,6 @@ export class Gpio {
   }
 
   #command(command: 'op' | 'dl' | 'dh') {
-    spawn('pinctrl', ['set', String(this.pin), command])
+    spawn('pinctrl', ['set', this.pin.toString(), command])
   }
 }
