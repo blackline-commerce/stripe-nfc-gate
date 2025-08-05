@@ -34,6 +34,7 @@ For example, for a gym membership:
 
 - [VTAP100 NFC Reader](https://shop.vtapnfc.com/product/vtap100-embedded-nfc-reader-board)
 - [Raspberry PI Zero 2W](https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/)
+- [Relay for driving door bolt](https://abra-electronics.com/electromechanical/relays/relay-modules-shields/rm-1-3-3v-t-single-isolated-3-3v-relay-high-low-trigger-module-10a.html)
 
 ## Resources
 
