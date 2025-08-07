@@ -1,7 +1,7 @@
 Stripe NFC Gate
 ---------------
 
-A solution for gating physical doors based on Stripe Subscriptions and NFC Passes.
+Gate physical doors using Stripe Subscriptions and NFC Passes.
 
 This example is suitable for gyms, co-working spaces, parking garages, hotels and event tickets.
 
