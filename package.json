@@ -7,7 +7,7 @@
   "scripts": {
     "check": "pnpm -r run check",
     "start:gate": "pnpm --filter gate run dev",
-    "start:web": "pnpm --filter website run dev"
+    "start:web": "pnpm --filter web run dev"
   },
   "keywords": [],
   "author": "",

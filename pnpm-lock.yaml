@@ -6,6 +6,8 @@ settings:
 
 importers:
 
+  .: {}
+
   gate:
     dependencies:
       '@serialport/parser-readline':
@@ -27,7 +29,7 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
 
-  website:
+  web:
     dependencies:
       '@hono/node-server':
         specifier: ^1.15.0

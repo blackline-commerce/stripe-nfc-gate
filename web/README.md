@@ -1,7 +1,7 @@
 Website
 --------
 
-This is the Gym's website.
+This is the Gym's public website.
 
 It does the following:
 
